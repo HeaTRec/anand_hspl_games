@@ -1,0 +1,373 @@
+body{
+    margin:0;
+    font-family: 'Nunito Sans', sans-serif;
+  }
+  a{
+    text-decoration:none;
+    color:black;
+  }
+  /*main component that holds all others*/
+  .main{
+    display:grid;
+    position:fixed;
+    grid-template-columns:20% 80%;
+    grid-template-rows:100%;
+    height:100%;
+  }
+  .hamburg{
+    display:none;
+  }
+
+  @media only screen and (max-width:700px){
+    .main{
+      grid-template-columns:100%;
+      position:relative;
+    }
+    .hamburg{
+      position:absolute;
+      display:inline-block;
+      right:15px;
+      top:20px;
+      z-index:2;
+    }
+  }
+  /*end of main*/
+  /* sidebar component*/
+  .sidebar{
+    background-color:#F8F9FA;
+    text-align:center;
+    height:100%;
+    border-right:1px solid #D8D8D8;
+    position:relative;
+  }
+
+  .sidebar ul{
+  padding:0;
+  }
+  .sidebar ul:nth-of-type(2){
+    position:absolute;
+    width:100%;
+    bottom:5px;
+  }
+  .sidebar ul:nth-of-type(2) button{
+    width:100%;
+    background-color:#F8F9FA;
+    border:1px solid #d8d8d8;
+    font-size:20px;
+    color:#b6b6b7;
+    border-right:0;
+    border-left:0;
+    padding:0;
+    border-bottom:0;
+  }
+  .sidebar .register{
+  border:0px !important;
+  }
+  .sidebar li{
+    list-style:none;
+    display:flex;
+    height:50px;
+    background-color:#F8F9FA;
+    border:1px solid #D8D8D8;
+  border-right:0;
+    border-left:0;
+  }
+  .sidebar li:hover{
+      background-color:#d8d8d8;
+    color:black;
+    cursor:pointer;
+
+  }
+  .sidebar li button:hover{
+     background-color:#d8d8d8;
+    color:black;
+  }
+  .sidebar ul li{
+    border-left:5px solid lightgreen;
+
+  }
+  .sidebar ul:first-of-type li:nth-of-type(1){
+    border-left:5px solid orange;
+  }
+
+  .sidebar a{
+      color:#b6b6b7;
+
+  }
+  .sidebar li h3{
+    margin:auto;
+    color:#b6b6b7;
+
+  }.sidebar li h3:hover{
+
+    color:grey;
+
+  }
+  .sidebar .logo{
+    width:80px;
+    height:80px;
+    margin-top:10px;
+  }
+
+  @media only screen and (max-width:700px){
+    .sidebar{
+      width:100%;
+      height:10%;
+      background-color:lightgray;
+  }
+    .sidebar ul:nth-of-type(2){
+    position:relative;
+
+  }
+    .sidebar .brand{
+    display:flex;
+  justify-content:space-around;
+  }
+    .sidebar .logo{
+   margin-left:5px;
+   width: 20px;
+   height: 20px;
+    }
+    .sidebar h1{
+      margin:auto;
+      padding-top: 10px;;
+      margin-left:3%;
+      font-size: 20px;;
+    }
+    .sidebar ul{
+      position:relative;
+      display: none;
+    }
+  }
+
+  /* end of sidebar */
+
+  /*content*/
+  .content{
+    background-color:#f0f0f0;
+    height:100%;
+    overflow:auto;
+  }
+  .dashboardhead  {
+      background-color:#F8F9FA;
+    height:70px;
+    display:flex;
+  }
+  .dashboardhead h2{
+    margin-top:auto;
+    margin-bottom:auto;
+    margin-left:20px;
+      color:#b6b6b7;
+
+
+  }
+  /*carousel*/
+  .carousel{
+    display:flex;
+    margin:auto;
+    width:95%;
+    height:500px;
+    background-color:grey;
+    position:relative;
+  }
+  #image{
+    width:100%;
+    height:100%;
+    margin:auto;
+  }
+  .leftspan{
+    position:absolute;
+    top:45%;
+    color:#ffff;
+  }
+  .rightspan{
+    position:absolute;
+    top:45%;
+    color:#ffff;
+    right:0;
+  }
+  @media only screen and (max-width:600px){
+    .carousel{
+      width:100%;
+    }
+  }
+  /*end of carousel*/
+  /*topfour*/
+  .topfour{
+    display:grid;
+    justify-content:space-between;
+    grid-template-columns:33% 33% 33% ;
+    grid-template-rows:300px 300px 300px 300px;
+  }
+  .card{
+    position:relative;
+    text-align:center;
+    background-color:#F8F9FA;
+    margin :20px;
+    border-radius:5px;
+      transition:1s;
+
+
+  }
+  .card h2{
+    color:#b6b6b7;
+    margin:auto;
+     margin-top:10px;
+  }
+  .card:hover{
+    box-shadow:5px 5px 5px rgba(0,0,0,0.4);
+    cursor:pointer;
+  }
+  .card img{
+    width:100%;
+    height:80%;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+    background-repeat: no-repeat;
+
+  }
+  .card .overlay{
+    position:absolute;
+    width:100%;
+    height:80%;
+    top:0;
+    left:0;
+    background-color:#fff;
+    display:none;
+    transition:1s;
+  }
+  .card .overlay h3,h4{
+    width:70%;
+    color:white;
+    margin:auto;
+  }
+  .card .overlay h3{
+    padding:10px;
+    background-color:orange;
+    border-radius:5px;
+    margin-top:100px;
+  }
+  .card .overlay h4{
+    color:#b6b6b7;
+    margin-top:0;
+  }
+  .card .overlay h4 span{
+    margin-left:10px;
+  }
+
+  .card .overlay h4:hover{
+    color:white;
+  }
+
+  .card:hover .overlay{
+    background-color:rgba(0,0,0,0.7);
+    display:flex;
+    flex-wrap:wrap;
+  }
+  @media only screen and (max-width:600px){
+    .topfour{
+    grid-template-columns:1fr;
+        grid-template-rows:1fr 1fr;
+  }
+  }
+  @media only screen and (min-width:600px) and (max-width:1024px){
+      .topfour{
+      grid-template-columns:1fr 1fr;
+
+    }
+  }
+  /*end of top4*/
+  /*best sellers*/
+  .bestsellers{
+    margin-left:15px;
+    position:relative;
+  }
+  .gamelist{
+  display:flex;
+    overflow-x:auto;
+    white-space:nowrap;
+  }
+  .smallcard{
+    height:300px;
+    width:180px;
+    background-color:#F8F9FA;
+    text-align:center;
+    margin:5px;
+  }
+  .smallcard img{
+    height:70%;
+    width:100%;
+  }
+  .smallcard h2{
+    margin:10px;
+      color:#b6b6b7;
+
+  }
+  .smallcard .price{
+    color:orange;
+  }
+  .leftscroll{
+    position:absolute;
+    top:5px;
+    right:70px;
+    color:grey;
+  }
+  .rightscroll{
+    position:absolute;
+    top:5px;
+    right:25px;
+    color:grey;
+  }
+
+  /*end of best sellers*/
+  /*unlimitedAcess*/
+  .unlimitedAccess{
+    display:grid;
+  grid-template-columns:1fr 2fr;
+    margin:20px;
+    background-color:#F8F9FA;
+
+  }
+  .unlimitedAccess h1{
+   margin:auto;
+    margin-top:60px;
+    margin-left:15px;
+  }
+  .unlimitedAccess h1:nth-child(2){
+    margin-top:10px;
+  }
+  .unlimitedAccess button{
+   padding:10px;
+
+    width:200px;
+    background-color:#F8F9FA;
+   border:2px solid lightblue;
+    display:block;
+    margin:auto;
+    margin-top:50px;
+      color:#b6b6b7;
+
+  }
+  .unlimitedAccess .gamelist{
+    margin-top:10px;
+  }
+  .arrow{
+    display:flex;
+    justify-content:flex-end;
+  }
+  .arrow span{
+    padding:10px;
+    color:gray;
+  }
+  @media only screen and (max-width:600px){
+    .unlimitedAccess{
+      display:grid;
+      grid-template-columns:1fr;
+      grid-template-rows:250px ;
+    }
+    .unlimitedAccess h1{
+  text-align:center;
+  }
+  }
+
+  /*end of unlimitedaccess*/

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Game Store</title>
+</head>
+<body>
+    <div class="main">
+        <span class="hamburg"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></span>
+     <!--sidebar component-->
+     <div class="sidebar">
+      <div class="brand"> <img class="logo" src="https://drive.google.com/uc?id=19aHXABlQrLfsBaKtO9r4rAgeUGKTRgMx" align="middle" alt="logo">
+   <h1>store</h1>
+       </div>
+
+        <ul>
+           <li><h3>Browse Games</h3></li>
+           <li><h3>Best Selling</h3></li>
+        </ul>
+
+        <ul>
+          <li><button type="button">Sign In</button></li>
+          <li><button type="button" class="register">Register</button></li>
+       </ul>
+
+     </div>
+   <!--end of sidebar-->
+   <!--content on right-->
+     <div class="content">
+
+       <div class="browsegames">
+         <!--dashboard overheaD-->
+
+         <div class="dashboardhead">
+           <h2>Dashboard</h2>
+           </div>
+         <!--->
+         <!-- carousel -->
+         <div class="carousel">
+     <span onclick="prevImage()" class="leftspan"><i class="fa fa-chevron-left fa-2x" aria-hidden="true"></i></span>
+     <img id="image" src="https://drive.google.com/uc?id=1bCLWBOlBTLQ73LXUYGMTs7T3vjv4y0Sj"alt="watchdogs2" />
+     <span onclick="nextImg()" class="rightspan"><i class="fa fa-chevron-right fa-2x" aria-hidden="true"></i>
+   </span>
+   </div>
+         <!--carousel ends-->
+         <div class="topfour">
+           <div class="card ">
+             <img src="https://drive.google.com/uc?id=1BypdGT4u36Ult33ODPdnvXPthe7ivAc-"alt=""/>
+             <div class="overlay">
+               <h3>Learn More</h3>
+               <h4>Add to wishlist<span><i class="fa fa-heart-o" aria-hidden="true"></i>
+   </span></h4>
+             </div>
+             <h2>COD:MW</h2>
+           </div>
+           <div class="card">
+             <img src="https://drive.google.com/uc?id=15eKVbP7Rs0ZkMIhFF66hjXOt4v6ekyHc"alt=""/>
+              <div class="overlay">
+               <h3>Learn More</h3>
+               <h4>Add to wishlist<span><i class="fa fa-heart-o" aria-hidden="true"></i>
+   </span></h4>
+             </div>
+                 <h2>Battlefield 4</h2>
+           </div>
+
+           <div class="card">
+             <img src="https://drive.google.com/uc?id=1z7HLxoiuj7DEoOS5IpA2Dj6cEnXQjsJr"alt=""/>
+              <div class="overlay">
+               <h3>Learn More</h3>
+               <h4>Add to wishlist<span><i class="fa fa-heart-o" aria-hidden="true"></i>
+   </span></h4>
+             </div>
+             <h2>Shadow of war</h2>
+           </div>
+
+           <div class="card">
+             <img src="https://drive.google.com/uc?id=1ghN97GruvHHuDnpZDmCYtX6_ykWdAtl2"alt=""/>
+              <div class="overlay">
+               <h3>Learn More</h3>
+               <h4>Add to wishlist<span><i class="fa fa-heart-o" aria-hidden="true"></i>
+   </span></h4>
+             </div>
+
+             <h2>Skyrim</h2>
+           </div>
+            <div class="card">
+             <img src="https://drive.google.com/uc?id=1BypdGT4u36Ult33ODPdnvXPthe7ivAc-"alt=""/>
+               <div class="overlay">
+               <h3>Learn More</h3>
+               <h4>Add to wishlist<span><i class="fa fa-heart-o" aria-hidden="true"></i>
+   </span></h4>
+             </div>
+             <h2>COD:MW</h2>
+           </div>
+           <div class="card">
+             <img src="https://drive.google.com/uc?id=15eKVbP7Rs0ZkMIhFF66hjXOt4v6ekyHc"alt=""/>
+                  <div class="overlay">
+               <h3>Learn More</h3>
+               <h4>Add to wishlist<span><i class="fa fa-heart-o" aria-hidden="true"></i>
+   </span></h4>
+             </div>
+             <h2>Battlefield 4</h2>
+           </div>
+
+           <div class="card">
+             <img src="https://drive.google.com/uc?id=1z7HLxoiuj7DEoOS5IpA2Dj6cEnXQjsJr"alt=""/>
+              <div class="overlay">
+               <h3>Learn More</h3>
+               <h4>Add to wishlist<span><i class="fa fa-heart-o" aria-hidden="true"></i>
+   </span></h4>
+             </div>
+             <h2>Shadow of war</h2>
+           </div>
+
+           <div class="card">
+             <img src="https://drive.google.com/uc?id=1ghN97GruvHHuDnpZDmCYtX6_ykWdAtl2"alt=""/>
+              <div class="overlay">
+               <h3>Learn More</h3>
+                <h4>Add to wishlist<span><i class="fa fa-heart-o" aria-hidden="true"></i>
+   </span></h4>
+             </div>
+             <h2>Skyrim</h2>
+           </div>
+         </div><!-- top4 div-->
+         <div class="bestsellers">
+           <h1>Best Sellers</h1>
+          <span onclick="scrolll(0)"class="leftscroll" ><i class="fa fa-chevron-circle-left fa-2x" aria-hidden="true"></i>
+   </span>
+        <span onclick="scrolll(1)" class="rightscroll"><i class="fa fa-chevron-circle-right fa-2x" aria-hidden="true"></i>
+   </span>
+           <div class="gamelist" id="gamelist">
+             <div class="smallcard one">
+               <img src="https://drive.google.com/uc?id=1sGypPUQ7bKSHaJ3KhEHHRxbkQfM3-PDe" alt=""/>
+             <h2>Battlefront 2</h2>
+               <h3 class="price">Rs, 4799.00</h3>
+             </div>
+             <div class="smallcard">
+                <img src="https://drive.google.com/uc?id=1sGypPUQ7bKSHaJ3KhEHHRxbkQfM3-PDe" alt=""/>
+             <h2>Battlefront 2</h2>
+               <h3 class="price">Rs, 4799.00</h3>
+             </div>
+             <div class="smallcard">
+                <img src="https://drive.google.com/uc?id=1sGypPUQ7bKSHaJ3KhEHHRxbkQfM3-PDe" alt=""/>
+             <h2>Battlefront 2</h2>
+               <h3 class="price">Rs, 4799.00</h3>
+             </div>
+
+              <div class="smallcard">
+              <img src="https://drive.google.com/uc?id=1sGypPUQ7bKSHaJ3KhEHHRxbkQfM3-PDe" alt=""/>
+             <h2>Battlefront 2</h2>
+               <h3 class="price">Rs, 4799.00</h3>
+             </div>
+
+              <div class="smallcard five">
+                <img src="https://drive.google.com/uc?id=1sGypPUQ7bKSHaJ3KhEHHRxbkQfM3-PDe" alt=""/>
+             <h2>Battlefront 2</h2>
+               <h3 class="price">Rs, 4799.00</h3>
+             </div>
+
+           </div><!--gamelist div end-->
+         </div><!--bestseller div end-->
+
+         <div class="unlimitedAccess">
+          <div class="lefthalf"> <h1>Unlimited play </h1>
+           <h1>with Steam Access</h1>
+           <button type="button">play</button>
+           </div>
+     <div style="overflow:auto;">
+       <div class="arrow" > <span onclick="scrol(0)"class="" ><i class="fa fa-chevron-circle-left fa-2x" aria-hidden="true"></i>
+   </span>
+        <span onclick="scrol(1)" class=""><i class="fa fa-chevron-circle-right fa-2x" aria-hidden="true"></i>
+   </span></div>
+              <div class="gamelist" id="gamelist2"><!--gamelist_2-->
+
+             <div class="smallcard">
+                <img src="https://drive.google.com/uc?id=1sGypPUQ7bKSHaJ3KhEHHRxbkQfM3-PDe" alt=""/>
+             <h2>Battlefront 2</h2>
+               <h3 class="price">Rs, 4799.00</h3>
+             </div>
+             <div class="smallcard">
+                <img src="https://drive.google.com/uc?id=1sGypPUQ7bKSHaJ3KhEHHRxbkQfM3-PDe" alt=""/>
+             <h2>Battlefront 2</h2>
+               <h3 class="price">Rs, 4799.00</h3>
+             </div>
+             <div class="smallcard">
+             <img src="https://drive.google.com/uc?id=1sGypPUQ7bKSHaJ3KhEHHRxbkQfM3-PDe" alt=""/>
+             <h2>Battlefront 2</h2>
+               <h3 class="price">Rs, 4799.00</h3>
+             </div>
+
+              <div class="smallcard">
+                <img src="https://drive.google.com/uc?id=1sGypPUQ7bKSHaJ3KhEHHRxbkQfM3-PDe" alt=""/>
+             <h2>Battlefront 2</h2>
+               <h3 class="price">Rs, 4799.00</h3>
+             </div>
+
+              <div class="smallcard">
+               <img src="https://drive.google.com/uc?id=1sGypPUQ7bKSHaJ3KhEHHRxbkQfM3-PDe" alt=""/>
+             <h2>Battlefront 2</h2>
+               <h3 class="price">Rs, 4799.00</h3>
+             </div>
+
+           </div><!--gamelist2 div end-->
+         </div>
+         </div><!--end of unlimitedAccess-->
+       </div><!--browse game div-->
+       <div class="order">
+
+
+       </div><!--order div-->
+     </div><!--content div-->
+   </div><!--main div-->
+   <script src="main.js" ></script>
+</body>
+</html>

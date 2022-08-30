@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock By Anand</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+   <div class="home">
+      <h1>Anand <div>Rock Paper</div></h1>
+
+      <div class="am-game">
+        <div class="am-score">
+            <div class="am-score-1">Score: <span>0</span></div>
+             <div class="am-spacer"></div>
+             <div class="am-score-2">Score: <span>0</span></div>
+        </div>
+
+        <div class="am-win-lose win">
+            <p>You Won The Game!!</p>
+            <div><button class="am-play-btn">Play Again!</button></div>
+        </div>
+        <div class="am-game-board">
+            <div class="am-computer">
+                <div class="am-game-number">1 / 10</div>
+                <div>
+                    <div class="am-player-1" data-choice="2"><span>Me</span></div>
+                    <div class="am-spacer"></div>
+                    <div class="am-player-2" data-choice="2"><span>Computer</span></div>
+                </div>
+            </div>
+            <div class="cs-player">
+                <div>
+                  <button class="cs-hand" data-hand="0" data-image="🤛">
+                    <span class="visually-hidden">rock</span>
+                  </button>
+                  <button class="cs-hand" data-hand="1" data-image="✋">
+                    <span class="visually-hidden">paper</span>
+                  </button>
+                  <button class="cs-hand" data-hand="2" data-image="✌">
+                    <span class="visually-hidden">scissor</span>
+                  </button>
+                  <button class="cs-hand" data-hand="3" data-image="🦎">
+                    <span class="visually-hidden">lizard</span>
+                  </button>
+                  <button class="cs-hand" data-hand="4" data-image="🖖">
+                    <span class="visually-hidden">spock</span>
+                  </button>
+                </div>
+        </div>
+      </div>
+      </div>
+
+
+    <div class="info">
+      <div>
+        <label for="toggle-rules"><i>i</i><strong>Rules</strong></label>
+        <input type="checkbox" id="toggle-rules" class="visually-hidden">
+        <div class="rule-list">
+          <p>Best score of 10 plays - wins!</p>
+          <ul>
+            <li>Scissors cuts Paper
+            </li>
+            <li>Paper covers Rock
+            </li>
+            <li>Rock crushes Lizard
+            </li>
+            <li>Lizard poisons Spock
+            </li>
+            <li>Spock smashes Scissors
+            </li>
+            <li>Scissors decapitates Lizard
+            </li>
+            <li>Lizard eats Paper
+            </li>
+            <li>Paper disproves Spock
+            </li>
+            <li>Spock vaporizes Rock
+            </li>
+            <li>(and as it always has) Rock crushes Scissors
+            </li>
+          </ul>
+
+          <p><a href="https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock" target="_blank" rel="noopener noreferrer">https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock</a></p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+      <a href="#" class="logo"><i class="fas fa-book"> JS Master Class</i></a>
+
+      <nav class="navbar">
+          <a href="#home">Home</a>
+          <a href="#features">Notes</a>
+          <a href="#products">Tutorials</a>
+          <a href="#categories">Coding Practice</a>
+          <a href="#blogs">Blogs</a>
+
+      </nav>
+
+      <div class="icons">
+          <div class="fas fa-bars" id="menu-btn"></div>
+      </div>
+
+  </header>
+
+
+<div class="home">
+    <h1>Sheldon's <div>Rock-Paper-Scissors-</div>
+        <div>Lizard-Spock</div>
+      </h1>
+
+      <div class="cs-game">
+        <div class="cs-score">
+          <div class="cs-score-1">Score: <span>0</span></div>
+          <div class="cs-spacer"></div>
+          <div class="cs-score-2">Score: <span>0</span></div>
+        </div>
+        <div class="cs-win-lose win">
+          <p>You win!</p>
+          <div><button class="cs-play-btn">Play again!</button></div>
+        </div>
+        <div class="cs-game-board">
+          <div class="cs-computer">
+            <div class="cs-game-number">1 / 10</div>
+            <div>
+              <div class="cs-player-1" data-choice="2"><span>Me</span></div>
+              <div class="cs-spacer"></div>
+              <div class="cs-player-2" data-choice="2"><span>PC</span></div>
+            </div>
+          </div>
+          <div class="cs-player">
+            <div>
+              <button class="cs-hand" data-hand="0" data-image="🤛">
+                <span class="visually-hidden">rock</span>
+              </button>
+              <button class="cs-hand" data-hand="1" data-image="✋">
+                <span class="visually-hidden">paper</span>
+              </button>
+              <button class="cs-hand" data-hand="2" data-image="✌">
+                <span class="visually-hidden">scissor</span>
+              </button>
+              <button class="cs-hand" data-hand="3" data-image="🦎">
+                <span class="visually-hidden">lizard</span>
+              </button>
+              <button class="cs-hand" data-hand="4" data-image="🖖">
+                <span class="visually-hidden">spock</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <script src="main.js"></script>
+</body>
+</html>
